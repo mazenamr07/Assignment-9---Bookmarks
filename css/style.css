@@ -1,0 +1,132 @@
+/* -------------------------------------------------------------------------- */
+/*                                Global Style                                */
+/* -------------------------------------------------------------------------- */
+a {
+  text-decoration: none;
+}
+
+.w-95 {
+  width: 95%;
+}
+
+body {
+  background-color: rgb(247, 236, 222);
+}
+/* -------------------------------- Variables ------------------------------- */
+:root {
+  --pacifico: "Pacifico", cursive;
+  --righteous: "Righteous", sans-serif;
+  --pt-sans-caption: "PT Sans Caption", sans-serif;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   Header                                   */
+/* -------------------------------------------------------------------------- */
+header {
+  border-bottom: rgb(53, 46, 40) dotted 2px;
+}
+
+h1 {
+  font-family: var(--pacifico);
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 60px;
+  color: rgb(53, 46, 40);
+  position: relative;
+}
+h1::after {
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  z-index: -1;
+
+  width: 100%;
+  height: 20px;
+  background-color: rgb(254, 194, 96);
+
+  transition: all 300ms ease-out;
+}
+h1:hover::after {
+  height: 38px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   Middle                                   */
+/* -------------------------------------------------------------------------- */
+.middle {
+  border-bottom: rgb(53, 46, 40) dotted 2px;
+}
+
+.middle > p {
+  background: linear-gradient(90deg, rgb(61, 165, 92), rgb(220, 172, 73));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-family: var(--righteous);
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.middle > .intake {
+  font-family: var(--pt-sans-caption);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+input.input-group {
+  padding-left: 13px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border: rgb(206, 212, 218) solid 1.5px;
+  outline: transparent solid 4px;
+
+  transition: all 200ms ease-in-out;
+}
+input.input-group:focus {
+  border: rgb(217, 156, 57) solid 1.5px;
+  outline: rgb(250, 222, 180) solid 4px;
+}
+
+.middle > button {
+  width: 30%;
+  background-color: rgb(209, 81, 45);
+  color: white;
+  transition: all 300ms ease-out;
+}
+.middle > button:hover {
+  color: white;
+  background-color: rgb(187, 65, 32);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 Date Table                                 */
+/* -------------------------------------------------------------------------- */
+.table > :not(caption) > * > * {
+  font-family: var(--pt-sans-caption);
+}
+
+.table > thead {
+  font-weight: 700;
+}
+
+.table button.delete {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: rgb(235, 29, 54);
+  --bs-btn-border-color: rgb(235, 29, 54);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: rgb(211, 8, 32);
+  --bs-btn-hover-border-color: rgb(163, 10, 28);
+}
+
+.table button.visit {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: rgb(158, 178, 59);
+  --bs-btn-border-color: rgb(158, 178, 59);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: rgb(138, 158, 35);
+  --bs-btn-hover-border-color: rgb(81, 94, 19);
+}
