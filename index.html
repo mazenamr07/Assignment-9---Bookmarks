@@ -59,7 +59,7 @@
 
   <body data-bs-spy="scroll" data-bs-target="#navbar-example">
     <!-- ---------------------------- Error Message ---------------------------- -->
-    <div class="error d-flex justify-content-center align-items-center d-none">
+    <div class="error justify-content-center align-items-center d-none">
       <div class="msg rounded-2 bg-white p-4">
         <div class="icons d-flex justify-content-between align-items-center">
           <div class="dots d-flex gap-2">
@@ -68,10 +68,14 @@
             <div class="dot"></div>
           </div>
 
-          <i class="fa-solid fa-xmark fs-3"></i>
+          <button class="bg-transparent border-0">
+            <i class="fa-solid fa-xmark fs-3"></i>
+          </button>
         </div>
 
-        <p class="my-4">Site Name or Url is not valid, Please follow the rules below :</p>
+        <p class="my-4">
+          Site Name or Url is not valid, Please follow the rules below :
+        </p>
 
         <div class="line d-flex align-items-baseline gap-2">
           <i class="fa-regular fa-circle-right"></i>
@@ -142,22 +146,6 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td class="align-middle">1</td>
-              <td class="align-middle">Test</td>
-              <td>
-                <button class="btn visit">
-                  <i class="fa-solid fa-eye pe-1"></i>
-                  <span class="text-capitalize">visit</span>
-                </button>
-              </td>
-              <td>
-                <button class="btn delete">
-                  <i class="fa-solid fa-trash-alt"></i>
-                  <span class="text-capitalize">delete</span>
-                </button>
-              </td>
-            </tr>
           </tbody>
         </table>
       </div>

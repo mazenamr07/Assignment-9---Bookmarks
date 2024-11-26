@@ -167,7 +167,7 @@ input.input-group:focus {
   font-weight: 700;
 }
 
-.table button.delete {
+.table a.delete {
   --bs-btn-color: #fff;
   --bs-btn-bg: rgb(235, 29, 54);
   --bs-btn-border-color: rgb(235, 29, 54);
@@ -176,7 +176,7 @@ input.input-group:focus {
   --bs-btn-hover-border-color: rgb(163, 10, 28);
 }
 
-.table button.visit {
+.table a.visit {
   --bs-btn-color: #fff;
   --bs-btn-bg: rgb(158, 178, 59);
   --bs-btn-border-color: rgb(158, 178, 59);
