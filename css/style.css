@@ -1,6 +1,10 @@
 /* -------------------------------------------------------------------------- */
 /*                                Global Style                                */
 /* -------------------------------------------------------------------------- */
+*::selection {
+  background-color: rgb(254, 194, 96);
+}
+
 a {
   text-decoration: none;
 }
@@ -12,13 +16,61 @@ a {
 body {
   background-color: rgb(247, 236, 222);
 }
+
 /* -------------------------------- Variables ------------------------------- */
 :root {
   --pacifico: "Pacifico", cursive;
   --righteous: "Righteous", sans-serif;
   --pt-sans-caption: "PT Sans Caption", sans-serif;
+  --bree-serif: "Bree Serif", serif;
 }
 
+/* ------------------------------ Error Message ----------------------------- */
+.error {
+  background-color: rgba(0, 0, 0, 0.45);
+  position: absolute;
+  inset: 0 0 0 0;
+  z-index: 999;
+}
+
+.error .msg {
+  max-width: 500px;
+}
+
+.dot {
+  background-color: rgb(77, 183, 72);
+  width: 20px;
+  height: 20px;
+  border-radius: 9999px;
+}
+.dot:nth-child(1) {
+  background-color: rgb(241, 95, 93);
+}
+.dot:nth-child(2) {
+  background-color: rgb(254, 190, 46);
+}
+
+.msg > p {
+  font-family: var(--bree-serif);
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 27px;
+  color: rgb(53, 46, 40);
+}
+
+.line > p {
+  font-family: var(--pt-sans-caption);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: rgb(33, 37, 41);
+}
+
+.line > i {
+  font-size: 18px;
+  margin-left: 8px;
+  color: rgb(187, 65, 32);
+}
 /* -------------------------------------------------------------------------- */
 /*                                   Header                                   */
 /* -------------------------------------------------------------------------- */
